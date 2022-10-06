@@ -30,7 +30,7 @@ else
 32679 -> 6
 */
 
-Console.WriteLine("Введите трех значное число ");
+Console.WriteLine("Задайте любое число");
 int number2 = Convert.ToInt32( Console.ReadLine());
 string nums = number2.ToString();
 if (number2 > 99)
@@ -43,7 +43,7 @@ else if (number2 < -99) {
     Console.WriteLine(number2 + " - Третьяция цифра - " + myInt);
 }
 else if (number2 < 100 && number2 >= 0) {
-    Console.WriteLine(number2 + " - Третьей цифры тут нет, попробуйте ещё раз.");
+    Console.WriteLine(number2 + " - третьей цифры тут нет");
 }
 else 
 {
