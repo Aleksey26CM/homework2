@@ -3,17 +3,17 @@
 
 456 -> 5
 782 -> 8
-918 -> 1git
+918 -> 1
 */
 
 Console.WriteLine("Введите трех значное число ");
 int number1 = Convert.ToInt32( Console.ReadLine());
 
-if ( number1 > 100 && number1 < 1000)
+if ( number1 > 99 && number1 < 1000)
 {
     int num = (number1 / 10);
     int result = num % 10;
-    Console.Write(result);
+    Console.Write(result + " - является второй цифрой числа - " + number1);
 }
 else 
 {
@@ -33,13 +33,17 @@ else
 Console.WriteLine("Введите трех значное число ");
 int number2 = Convert.ToInt32( Console.ReadLine());
 string nums = number2.ToString();
-if (number2 > 100)
+if (number2 > 99)
 {
     var myInt = int.Parse(nums[2].ToString());
-    Console.WriteLine(myInt);
+    Console.WriteLine(number2 + " - Третьяция цифра - " + myInt);
+}
+else if (number2 < -99) {
+    var myInt = int.Parse(nums[3].ToString());
+    Console.WriteLine(number2 + " - Третьяция цифра - " + myInt);
 }
 else if (number2 < 100 && number2 >= 0) {
-    Console.WriteLine(number2 + " - Третей цифры тут нет, попробуйте ещё раз.");
+    Console.WriteLine(number2 + " - Третьей цифры тут нет, попробуйте ещё раз.");
 }
 else 
 {
